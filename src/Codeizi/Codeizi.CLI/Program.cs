@@ -1,6 +1,14 @@
-﻿Console.WriteLine("Bem vindo ao Codeizi");
+﻿using Codeizi.CLI.Commands;
 
-var input = Console.ReadLine();
+public class Program
+{
+    static void Main(string[] args)
+    {
+        var commands = FactoryCommand.Create(args);
+        foreach (var command in commands)
+        {
+            Console.WriteLine(command.Execution.Proccess());
+        }
 
-Console.WriteLine(input);
-
+    }
+}

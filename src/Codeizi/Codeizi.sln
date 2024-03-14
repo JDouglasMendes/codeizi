@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeizi.CLI", "Codeizi.CLI\Codeizi.CLI.csproj", "{EF9BFDD1-EF9F-43E6-9AA6-0F6835D25B64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.CLI", "Codeizi.CLI\Codeizi.CLI.csproj", "{EF9BFDD1-EF9F-43E6-9AA6-0F6835D25B64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD1D337A-7668-4850-923C-DADC75112BFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B0ED9034-090C-4C79-BB08-ECB2CC45E113}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +22,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF9BFDD1-EF9F-43E6-9AA6-0F6835D25B64} = {BD1D337A-7668-4850-923C-DADC75112BFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6963E20A-C1DC-49F1-9EBA-79D18758B813}

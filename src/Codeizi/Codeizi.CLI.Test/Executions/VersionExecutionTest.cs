@@ -1,4 +1,4 @@
-﻿using Codeizi.CLI.Executions;
+﻿using Codeizi.Service.Executions;
 
 namespace Codeizi.CLI.Test.Commands
 {

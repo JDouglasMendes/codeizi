@@ -1,14 +1,15 @@
-﻿using Codeizi.CLI.Commands;
+﻿using Codeizi.DI;
+using Codeizi.Service.Commands;
 
 public class Program
 {
     static void Main(string[] args)
     {
-        var commands = FactoryCommand.Create(args);
-        foreach (var command in commands)
-        {
-            Console.WriteLine(command.Execution.Proccess());
-        }
+        SetupDI.StartSetupApp();
+
+        var factoryCommands = SetupDI.Get<FactoryCommand>();
+
+        var commands = factoryCommands.Create(args);
 
     }
 }

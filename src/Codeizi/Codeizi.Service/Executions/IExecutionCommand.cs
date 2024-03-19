@@ -1,6 +1,6 @@
 ﻿namespace Codeizi.Service.Executions
 {
-    public interface IExecution
+    public interface IExecutionCommand
     {
         void Proccess();
     }

@@ -21,8 +21,8 @@ namespace Codeizi.DI
         public T Get<T>() where T : notnull
             => _serviceCollection!.GetRequiredService<T>();
 
-        public IExecution Get(Type type)
-            => (IExecution)_serviceCollection!.GetService(type);
+        public IExecutionCommand Get(Type type)
+            => (IExecutionCommand)_serviceCollection!.GetService(type);
 
     }
 }

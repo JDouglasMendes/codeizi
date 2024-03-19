@@ -4,7 +4,7 @@ using Codeizi.Service.UI;
 namespace Codeizi.Service.Executions
 {
     [Command(typeof(VersionCommand))]
-    public class VersionExecution : IExecution
+    public class VersionExecution : IExecutionCommand
     {
         private readonly IConsoleManager consoleManager;
 

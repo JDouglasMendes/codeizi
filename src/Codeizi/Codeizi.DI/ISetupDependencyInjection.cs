@@ -6,6 +6,6 @@ namespace Codeizi.DI
     {
         void Initialize();
         T Get<T>() where T : notnull;
-        IExecution Get(Type type);
+        IExecutionCommand Get(Type type);
     }
 }

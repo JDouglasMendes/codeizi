@@ -9,9 +9,7 @@ public class Program
         try
         {
             if (args.Length == 0)
-            {
                 args = ["-v"];
-            }
             new CodeiziManager(new SetupDependencyInjection()).Start(args);
             return (int)EnumCodeReturn.SUCCES_RETURN;
         }

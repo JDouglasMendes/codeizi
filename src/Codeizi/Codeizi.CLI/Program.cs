@@ -9,15 +9,15 @@ public class Program
         try
         {
             new CodeiziManager(new SetupDependencyInjection()).Start(args);
-            return 0;
+            return (int)EnumCodeReturn.SUCCES_RETURN;
         }
         catch (CommandException)
         {
-            return 1;
+            return (int)EnumCodeReturn.COMMAND_NOT_FOUND;
         }
         catch (Exception)
         {
-            return 99;
+            return (int)EnumCodeReturn.INTERNAL_ERROR;
         }
     }
 }

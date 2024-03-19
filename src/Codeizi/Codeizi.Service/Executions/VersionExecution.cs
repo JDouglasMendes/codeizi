@@ -15,7 +15,11 @@ namespace Codeizi.Service.Executions
 
         public void Proccess()
         {
-            consoleManager.WriteLine("codeizi      0.0.1");
+            consoleManager.Write("codeizi");
+            consoleManager.Write("       ");
+            consoleManager.Color(ConsoleColor.Green);
+            consoleManager.Write("0.0.1 (alfa)");
+            consoleManager.Reset();
         }
     }
 }

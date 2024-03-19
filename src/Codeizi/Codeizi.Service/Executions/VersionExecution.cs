@@ -1,14 +1,21 @@
 ﻿using Codeizi.Service.Commands;
+using Codeizi.Service.UI;
 
 namespace Codeizi.Service.Executions
 {
     [Command(typeof(VersionCommand))]
     public class VersionExecution : IExecution
     {
+        private readonly IConsoleManager consoleManager;
 
-        public string Proccess()
+        public VersionExecution(IConsoleManager consoleManager)
         {
-            return "codeizi      0.0.1";
+            this.consoleManager = consoleManager;
+        }
+
+        public void Proccess()
+        {
+            consoleManager.WriteLine("codeizi      0.0.1");
         }
     }
 }

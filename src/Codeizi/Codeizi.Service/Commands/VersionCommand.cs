@@ -2,7 +2,7 @@
 {
     public record VersionCommand : BaseCommand
     {
-        public VersionCommand() : base("version", "v")
+        public VersionCommand() : base("-version", "-v")
         {
         }
     }

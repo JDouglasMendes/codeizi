@@ -21,5 +21,8 @@ namespace Codeizi.DI
         public static T Get<T>() where T : notnull
             => _serviceCollection!.GetRequiredService<T>();
 
+        public static IExecution Get(Type type)
+            => (IExecution)_serviceCollection!.GetService(type);
+
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IExecution
     {
-        string Proccess();
+        void Proccess();
     }
 }

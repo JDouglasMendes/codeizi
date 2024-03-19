@@ -5,11 +5,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Codeizi.DI
 {
-    public static class SetupDI
+    public class SetupDependencyInjection : ISetupDependencyInjection
     {
-        private static ServiceProvider? _serviceCollection;
+        private ServiceProvider? _serviceCollection;
 
-        public static void StartSetupApp()
+        public void Initialize()
         {
             _serviceCollection = new ServiceCollection()
                 .AddScoped<IConsoleManager, ConsoleManager>()
@@ -18,10 +18,10 @@ namespace Codeizi.DI
                 .BuildServiceProvider();
         }
 
-        public static T Get<T>() where T : notnull
+        public T Get<T>() where T : notnull
             => _serviceCollection!.GetRequiredService<T>();
 
-        public static IExecution Get(Type type)
+        public IExecution Get(Type type)
             => (IExecution)_serviceCollection!.GetService(type);
 
     }

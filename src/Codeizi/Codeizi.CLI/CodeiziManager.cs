@@ -3,20 +3,20 @@ using Codeizi.Service.Commands;
 
 namespace Codeizi.CLI
 {
-    public class CodeiziManager : ICodeiziManager
+    public class CodeiziManager(ISetupDependencyInjection injection) : ICodeiziManager
     {
         public void Start(string[] args)
         {
-            SetupDI.StartSetupApp();
+            injection.Initialize();
 
-            var factoryCommands = SetupDI.Get<FactoryCommand>();
+            var factoryCommands = injection.Get<FactoryCommand>();
 
             var commands = factoryCommands.Create(args);
 
             foreach (var command in commands)
             {
                 var executionType = factoryCommands.GetExecution(command);
-                SetupDI.Get(executionType).Proccess();
+                injection.Get(executionType).Proccess();
             }
         }
     }

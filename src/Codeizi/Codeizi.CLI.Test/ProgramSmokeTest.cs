@@ -5,8 +5,8 @@
         [Fact]
         public void SmokeOkTest()
         {
-            Program.Main(["-version"]);
-            Assert.True(true);
+            var result = Program.Main(["-version"]);
+            Assert.Equal(0, result);
         }
     }
 }

@@ -1,6 +1,8 @@
 # Binários e arquivos compilados
 bin/
 obj/
+CoverageReport/
+coverage/
 
 # Arquivos temporários
 *.DS_Store
@@ -31,3 +33,4 @@ packages/
 *.suo
 *.user
 *.sln.docstates
+

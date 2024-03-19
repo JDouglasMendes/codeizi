@@ -9,7 +9,7 @@ namespace Codeizi.Service.Test.Commands
         {
             // Arrange
             var factory = new FactoryCommand();
-            string token = "version";
+            string token = "-version";
 
             // Act
             var command = factory.Create(token);
@@ -24,7 +24,7 @@ namespace Codeizi.Service.Test.Commands
         {
             // Arrange
             var factory = new FactoryCommand();
-            string[] tokens = { "version", "v" };
+            string[] tokens = { "-version", "-v" };
 
             // Act
             var commands = factory.Create(tokens);

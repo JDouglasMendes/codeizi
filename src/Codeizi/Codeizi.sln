@@ -17,6 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.Service", "Codeizi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeizi.Service.Test", "Codeizi.Service.Test\Codeizi.Service.Test.csproj", "{D756587D-7B9B-44AD-B192-6AAA69EF6D7C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8906C233-A119-4D40-B5CA-14693CDDEEFD}"
+	ProjectSection(SolutionItems) = preProject
+		exec-cover-test.bat = exec-cover-test.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

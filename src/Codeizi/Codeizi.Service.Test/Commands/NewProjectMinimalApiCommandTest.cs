@@ -1,14 +1,14 @@
 ﻿using Codeizi.Service.Commands;
 
-namespace Codeizi.Service.Test.Executions
+namespace Codeizi.Service.Test.Commands
 {
-    public class NewProjectMinimalApiTests
+    public class NewProjectMinimalApiCommandTest
     {
         [Fact]
         public void GetArgs_ReturnsCorrectParameters()
         {
             // Arrange
-            var command = new NewProjectMinimalApi();
+            var command = new NewProjectMinimalApiCommand();
             var args = new string[] { "-n", "MyProjectName" };
 
             // Act
@@ -27,7 +27,7 @@ namespace Codeizi.Service.Test.Executions
         public void GetArgs_ReturnsErrosWithDuplicatedParameters()
         {
             // Arrange
-            var command = new NewProjectMinimalApi();
+            var command = new NewProjectMinimalApiCommand();
             var args = new string[] { "-n", "MyProjectName", "-name", "MyName" };
 
             // Act            
@@ -39,7 +39,7 @@ namespace Codeizi.Service.Test.Executions
         public void GetArgs_NoParameters_ReturnsEmptyList()
         {
             // Arrange
-            var command = new NewProjectMinimalApi();
+            var command = new NewProjectMinimalApiCommand();
             var args = Array.Empty<string>();
 
             // Act
@@ -54,7 +54,7 @@ namespace Codeizi.Service.Test.Executions
         public void GetArgs_Others_Parameters_ReturnsEmptyList()
         {
             // Arrange
-            var command = new NewProjectMinimalApi();
+            var command = new NewProjectMinimalApiCommand();
             var args = new string[] { "-any", "MyProjectName" };
 
             // Act
@@ -69,7 +69,7 @@ namespace Codeizi.Service.Test.Executions
         public void GetArgs_WithValidANdOthersParameters()
         {
             // Arrange
-            var command = new NewProjectMinimalApi();
+            var command = new NewProjectMinimalApiCommand();
             var args = new string[] { "-n", "MyProjectName", "-any", "MyProjectName" };
 
             // Act

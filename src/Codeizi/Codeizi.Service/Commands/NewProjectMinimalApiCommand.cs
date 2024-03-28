@@ -1,8 +1,8 @@
 ﻿namespace Codeizi.Service.Commands
 {
-    public record NewProjectMinimalApi : BaseCommand
+    public record NewProjectMinimalApiCommand : BaseCommand
     {
-        public NewProjectMinimalApi() : base("np-minimal-api", "npmapi") { }
+        public NewProjectMinimalApiCommand() : base("np-minimal-api", "npmapi") { }
 
         private readonly string[] _parameters = ["-n", "-name"];
 

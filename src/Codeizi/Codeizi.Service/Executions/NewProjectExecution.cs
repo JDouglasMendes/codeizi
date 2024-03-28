@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace Codeizi.Service.Executions
 {
-    [Command(typeof(NewProjectMinimalApi))]
+    [Command(typeof(NewProjectMinimalApiCommand))]
     public class NewProjectExecution(IConsoleManager console) : IExecutionCommand
     {
         /// <summary>

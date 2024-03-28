@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Codeizi.ConsoleManager\Codeizi.ConsoleManager.csproj" />
+    <ProjectReference Include="..\Codeizi.ProcessExecution\Codeizi.ProcessExecution.csproj" />
+  </ItemGroup>
+
 </Project>

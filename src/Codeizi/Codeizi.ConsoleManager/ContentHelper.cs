@@ -1,4 +1,4 @@
-﻿namespace Codeizi.Service.UI
+﻿namespace Codeizi.ConsoleManager
 {
     public class ContentHelper
     {

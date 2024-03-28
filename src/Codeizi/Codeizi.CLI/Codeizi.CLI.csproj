@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Codeizi.ConsoleManager\Codeizi.ConsoleManager.csproj" />
     <ProjectReference Include="..\Codeizi.DI\Codeizi.DI.csproj" />
+    <ProjectReference Include="..\Codeizi.ProcessExecution\Codeizi.ProcessExecution.csproj" />
     <ProjectReference Include="..\Codeizi.Service\Codeizi.Service.csproj" />
   </ItemGroup>
 

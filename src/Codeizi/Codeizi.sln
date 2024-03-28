@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeizi.ProcessExecution", "Codeizi.ProcessExecution\Codeizi.ProcessExecution.csproj", "{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeizi.ConsoleManager", "Codeizi.ConsoleManager\Codeizi.ConsoleManager.csproj", "{38479AC9-E490-461C-9A11-3FCA47457DEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38479AC9-E490-461C-9A11-3FCA47457DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38479AC9-E490-461C-9A11-3FCA47457DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38479AC9-E490-461C-9A11-3FCA47457DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38479AC9-E490-461C-9A11-3FCA47457DEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{26DBD578-8AB2-4E49-A625-C7BDBC3B8576} = {BD1D337A-7668-4850-923C-DADC75112BFD}
 		{D756587D-7B9B-44AD-B192-6AAA69EF6D7C} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05} = {BD1D337A-7668-4850-923C-DADC75112BFD}
+		{38479AC9-E490-461C-9A11-3FCA47457DEF} = {BD1D337A-7668-4850-923C-DADC75112BFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6963E20A-C1DC-49F1-9EBA-79D18758B813}

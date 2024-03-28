@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Codeizi.ConsoleManager\Codeizi.ConsoleManager.csproj" />
-  </ItemGroup>
-
 </Project>

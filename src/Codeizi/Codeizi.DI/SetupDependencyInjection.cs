@@ -1,6 +1,6 @@
-﻿using Codeizi.Service.Commands;
+﻿using Codeizi.ConsoleManager;
+using Codeizi.Service.Commands;
 using Codeizi.Service.Executions;
-using Codeizi.Service.UI;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Codeizi.DI
@@ -12,7 +12,7 @@ namespace Codeizi.DI
         public void Initialize()
         {
             _serviceCollection = new ServiceCollection()
-                .AddScoped<IConsoleManager, ConsoleManager>()
+                .AddScoped<ICodeiziConsoleManager, CodeiziConsoleManager>()
                 .AddScoped<VersionExecution>()
                 .AddScoped<NewProjectMinimalApiExecution>()
                 .AddSingleton<FactoryCommand>()

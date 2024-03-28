@@ -6,5 +6,7 @@
         {
         }
         public override IEnumerable<ParameterCommand> GetArgs(string[] args) => [];
+
+        public override string[] GetParameters() => [];
     }
 }

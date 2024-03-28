@@ -1,6 +1,8 @@
-﻿namespace Codeizi.Service.UI
+﻿using Codeizi.ConsoleManager;
+
+namespace Codeizi
 {
-    public class ConsoleManager : IConsoleManager
+    public class CodeiziConsoleManager : ICodeiziConsoleManager
     {
         public void Color(ConsoleColor color)
         {

@@ -1,6 +1,6 @@
-﻿namespace Codeizi.Service.UI
+﻿namespace Codeizi.ConsoleManager
 {
-    public interface IConsoleManager
+    public interface ICodeiziConsoleManager
     {
         void WriteLine(string message);
         void Write(string message);

@@ -6,7 +6,7 @@ namespace Codeizi.Service.Executions
     [Command(typeof(VersionCommand))]
     public class VersionExecution(IConsoleManager consoleManager) : IExecutionCommand
     {
-        public void Proccess()
+        public void Proccess(IEnumerable<ParameterCommand> args)
         {
             consoleManager.Write("codeizi");
             consoleManager.Write("       ");

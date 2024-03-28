@@ -4,7 +4,10 @@ namespace Codeizi.Service.Commands
 {
     public class FactoryCommand
     {
-        private readonly List<BaseCommand> _commands = [new VersionCommand()];
+        private readonly List<BaseCommand> _commands = [
+            new VersionCommand(),
+            new NewProjectCommand()];
+
         public BaseCommand Create(string token)
             => _commands.Find(x => x.Name.ToLower().Equals(token.ToLower()) ||
                         x.ShortName.ToLower().Equals(token.ToLower())) ??

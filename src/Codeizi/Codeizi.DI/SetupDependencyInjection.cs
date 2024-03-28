@@ -14,6 +14,7 @@ namespace Codeizi.DI
             _serviceCollection = new ServiceCollection()
                 .AddScoped<IConsoleManager, ConsoleManager>()
                 .AddScoped<VersionExecution>()
+                .AddScoped<NewProjectExecution>()
                 .AddSingleton<FactoryCommand>()
                 .BuildServiceProvider();
         }

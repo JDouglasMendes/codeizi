@@ -1,12 +1,8 @@
 ﻿namespace Codeizi.Service.Commands
 {
     [AttributeUsage(AttributeTargets.Class)]
-    internal class CommandAttribute : Attribute
+    internal class CommandAttribute(Type type) : Attribute
     {
-        public Type Type { get; }
-        public CommandAttribute(Type type)
-        {
-            this.Type = type;
-        }
+        public Type Type { get; } = type;
     }
 }

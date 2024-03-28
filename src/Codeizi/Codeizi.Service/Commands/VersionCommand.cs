@@ -5,5 +5,6 @@
         public VersionCommand() : base("-version", "-v")
         {
         }
+        public override IEnumerable<ParameterCommand> GetArgs(string[] args) => [];
     }
 }

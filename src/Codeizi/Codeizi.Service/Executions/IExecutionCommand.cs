@@ -1,7 +1,9 @@
-﻿namespace Codeizi.Service.Executions
+﻿using Codeizi.Service.Commands;
+
+namespace Codeizi.Service.Executions
 {
     public interface IExecutionCommand
     {
-        void Proccess();
+        void Proccess(IEnumerable<ParameterCommand> args);
     }
 }

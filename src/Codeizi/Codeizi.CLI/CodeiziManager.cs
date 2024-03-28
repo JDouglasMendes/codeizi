@@ -16,7 +16,7 @@ namespace Codeizi.CLI
             foreach (var command in commands)
             {
                 var executionType = factoryCommands.GetExecution(command);
-                injection.Get(executionType).Proccess();
+                injection.Get(executionType).Proccess(command.GetArgs(args));
             }
         }
     }

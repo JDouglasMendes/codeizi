@@ -6,7 +6,7 @@ namespace Codeizi.Service.Commands
     {
         private readonly List<BaseCommand> _commands = [
             new VersionCommand(),
-            new NewProjectCommand()];
+            new NewProjectMinimalApi()];
 
         public BaseCommand Create(string token)
             => _commands.Find(x => x.Name.ToLower().Equals(token.ToLower()) ||

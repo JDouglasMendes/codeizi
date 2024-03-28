@@ -5,7 +5,7 @@ using System.Diagnostics;
 namespace Codeizi.Service.Executions
 {
     [Command(typeof(NewProjectMinimalApiCommand))]
-    public class NewProjectExecution(IConsoleManager console) : IExecutionCommand
+    public class NewProjectMinimalApiExecution(IConsoleManager console) : IExecutionCommand
     {
         /// <summary>
         /// 1. Enter the name of the project:

@@ -14,8 +14,9 @@ namespace Codeizi.Service.Executions
         /// </summary>
         public void Proccess(IEnumerable<ParameterCommand> args)
         {
-            var projectName = args.FirstOrDefault(x => x.Name.Equals(NewProjectMinimalApiCommand.SHORT_NAME))
-                ?? args.FirstOrDefault(x => x.Name.Equals(NewProjectMinimalApiCommand.LONG_NAME));
+            var projectName = (args.FirstOrDefault(x => x.Name.Equals(NewProjectMinimalApiCommand.SHORT_NAME))
+                ?? args.FirstOrDefault(x => x.Name.Equals(NewProjectMinimalApiCommand.LONG_NAME)))
+                    ?? throw ParameterForCommandNotFound.Throw("np-minimal-api");
             processExecution.Execute("dotnet", $"new webapi -o {projectName!.Value}");
             console.WriteLine("Projeto criado com sucesso");
         }
